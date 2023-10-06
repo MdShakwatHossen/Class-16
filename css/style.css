@@ -1,0 +1,482 @@
+/* =========== Common Css Starts =========== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+  margin: 0;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+:root {
+  --primary-font: "Ubuntu", sans-serif;
+  --secondary-font: "Open Sans", sans-serif;
+  --title-font: "Abril Fatface", cursive;
+  --primary-color: #0f2f44;
+  --secondary-color: #ffc712;
+  --third-color: #8484bf;
+}
+body {
+  font-family: var(--primary-font);
+}
+.section_title {
+  margin-bottom: 30px;
+  color: var(--primary-color);
+}
+.section_title p {
+  font-weight: 300;
+  font-size: 14px;
+}
+.section_title h2 {
+  font-family: var(--title-font);
+  font-size: 32px;
+  text-transform: capitalize;
+}
+.section_title_description {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  color: var(--primary-color);
+  line-height: 24px;
+  margin-bottom: 35px;
+}
+.link_button {
+  font-weight: 500;
+  font-size: 20px;
+  padding: 15px 22px;
+  display: inline-block;
+  background: #ffffff;
+  box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.15);
+  color: var(--primary-color);
+  text-transform: capitalize;
+  border-radius: 5px;
+  transition: 0.4s;
+  margin: 0 20px;
+}
+.link_button:hover {
+  background: var(--secondary-color);
+}
+/* =========== Common Css Ends =========== */
+
+/* ==========Top Header Css Starts========== */
+#top_header {
+  background-color: var(--primary-color);
+  padding: 19px 0;
+}
+#top_header p {
+  color: #fefefe;
+  font-weight: 400;
+}
+/* ==========Top Header Css Ends========== */
+
+/* ==========Primary Nav Css Starts========== */
+#primary_nav #primary_menu a {
+  color: #222222;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 40px 24px;
+  display: block;
+  transition: 0.5s;
+}
+#primary_nav #primary_menu a:hover,
+#primary_nav #primary_menu span:hover {
+  color: var(--secondary-color);
+  background-color: #fff9e6;
+}
+#primary_nav #primary_menu span {
+  margin: 0 20px;
+  width: 29px;
+  height: 29px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 29px;
+  border: 1px solid #dedede;
+  display: inline-block;
+  color: #999999;
+}
+/* ==========Primary Nav Css Ends========== */
+
+/* ==========Banner Css Starts========== */
+#banner {
+  background-image: url(../img/banner.jpg);
+  height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#banner .banner_items h2 {
+  font-weight: 300;
+  color: var(--primary-color);
+  font-size: 50px;
+  line-height: 70px;
+}
+#banner .banner_items h1 {
+  font-family: var(--title-font);
+  color: var(--primary-color);
+  font-size: 80px;
+  line-height: 70px;
+}
+#banner .banner_items h3 {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 24px;
+  letter-spacing: 18px;
+  color: var(--third-color);
+  margin-top: 15px;
+}
+#banner .banner_items p {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 14px;
+  color: #444444;
+  line-height: 24px;
+  margin: 30px 0;
+}
+#banner .banner_items .explore {
+  border-radius: 5px;
+}
+#banner .banner_items .explore,
+#banner .banner_items .play {
+  padding: 15px 20px;
+  background-color: #ffffff;
+  color: var(--third-color);
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: capitalize;
+  box-shadow: 0 7px 20px 0 rgba(132, 132, 191, 0.15);
+  transition: 0.4s;
+}
+#banner .banner_items .play {
+  margin: 0 20px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+}
+#banner .banner_items .explore:hover,
+#banner .banner_items .play:hover {
+  background-color: var(--third-color);
+  color: #ffffff;
+}
+#banner .banner_items .explore:hover {
+  border-radius: 5px;
+}
+/* ==========Banner Css Ends========== */
+
+/* ==========About Css Starts========== */
+#about_us {
+  margin: 100px 0;
+}
+#about_us .about_content {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 44px;
+  margin-bottom: 30px;
+  color: var(--primary-color);
+}
+/* ==========About Css Ends========== */
+
+/* ==========Services Css Starts========== */
+#services {
+  background: #f5f5f5;
+  margin: 100px 0;
+  padding-bottom: 80px;
+}
+#services .section_title {
+  padding: 60px 0;
+}
+#services .service_box .service_icon {
+  background: #e9e9e9;
+  padding: 60px 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px 0 0 5px;
+}
+#services .service_box .service_cnt {
+  background: #eeeeee;
+  border-radius: 0 5px 5px 0;
+  padding: 30px 19px;
+}
+#services .service_box .service_cnt h3 {
+  font-weight: 500;
+  font-size: 20px;
+  color: #222222;
+  text-transform: capitalize;
+}
+#services .service_box .service_cnt p {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 14px;
+  color: #444444;
+  line-height: 24px;
+  margin-top: 20px;
+}
+#services .service_box {
+  position: relative;
+  margin: 10px 0;
+}
+#services .service_box .overlay {
+  background: var(--primary-color);
+  padding: 30px 0;
+  text-align: center;
+  position: relative;
+  visibility: hidden;
+  opacity: 0;
+  inset: 0;
+  transition: 0.3s;
+  position: absolute;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+}
+#services .service_box .overlay h3 {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 20px;
+  margin: 20px 0;
+  text-align: center;
+  text-transform: capitalize;
+}
+#services .service_box .overlay i {
+  background: var(--secondary-color);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  line-height: 40px;
+  color: #222222;
+  position: absolute;
+  bottom: -20px;
+  left: 48%;
+}
+#services .service_box:hover .overlay {
+  visibility: visible;
+  opacity: 1;
+}
+/* ==========Services Css Ends========== */
+
+/* ==========Portfolio Css Starts========== */
+#portfolio .link_button {
+  margin: 60px 0 0;
+}
+#portfolio .portfolio_image {
+  position: relative;
+}
+#portfolio .portfolio_image .overlay h4 {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--primary-color);
+  text-transform: capitalize;
+  text-align: center;
+}
+#portfolio .portfolio_image .overlay {
+  background: #ffffff;
+  padding: 32px 0;
+  position: absolute;
+  bottom: -20px;
+  width: 350px;
+  opacity: 0;
+  visibility: hidden;
+  box-shadow: 0 15px 50px 10px rgba(0, 0, 0, 0.002);
+  transition: 0.4s;
+  border: 1px solid #ffffff;
+  border-radius: 0 0 5px 5px;
+}
+#portfolio .portfolio_image:hover .overlay {
+  opacity: 1;
+  visibility: visible;
+  box-shadow: 0 15px 50px 10px rgba(0, 0, 0, 0.15);
+  bottom: 0;
+}
+/* ==========Portfolio Css Ends========== */
+
+/* ==========Testimonial Css Starts========== */
+#testimonial {
+  background: #f5f5f5;
+  padding: 60px 0;
+  margin: 100px 0;
+}
+#testimonial .testimonial_box .testimonial_cnt {
+  border-radius: 0 5px 5px 0;
+}
+#testimonial .testimonial_box .testimonial_cnt p {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  color: var(--primary-color);
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 32px;
+}
+#testimonial .testimonial_box .testimonial_cnt h4 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--primary-color);
+  text-transform: capitalize;
+}
+#testimonial .testimonial_box .testimonial_cnt h5 {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--primary-color);
+  text-transform: capitalize;
+}
+#testimonial .testimonial_box .testimonial_cnt {
+  padding: 30px 20px;
+  background: #e9e9e9;
+}
+/* ==========Testimonial Css Ends========== */
+
+/* ==========Last Blog Css Starts========== */
+#last_blog {
+  margin-bottom: 100px;
+}
+#last_blog .last_blog_box {
+  padding: 20px;
+  background: #f5f5f5;
+  border-radius: 5px;
+  transition: 0.4s;
+}
+#last_blog .last_blog_box img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  margin-bottom: 30px;
+}
+#last_blog .last_blog_box p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #777777;
+  line-height: 26px;
+}
+#last_blog .last_blog_box h6 {
+  font-weight: 500;
+  font-size: 20px;
+  color: #222222;
+  line-height: 26px;
+  margin: 20px 0;
+}
+#last_blog .last_blog_box a {
+  font-weight: 500;
+  font-size: 16px;
+  color: #777777;
+  line-height: 26px;
+}
+#last_blog .last_blog_box a i {
+  margin: 0 10px;
+}
+#last_blog .link_button {
+  margin-top: 60px;
+}
+#last_blog .last_blog_box:hover {
+  background: var(--primary-color);
+}
+#last_blog .last_blog_box:hover h6,
+#last_blog .last_blog_box:hover p,
+#last_blog .last_blog_box:hover a {
+  color: #ffffff;
+}
+/* ==========Last Blog Css Ends========== */
+
+/* ==========Footer Css Starts========== */
+footer .title {
+  font-weight: 500;
+  font-size: 20px;
+  color: #222222;
+  line-height: 24px;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+}
+footer .flicker_stream .flicker_stream_img img {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 15px;
+}
+footer .brands p {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-family: 14px;
+  color: #777777;
+  margin-bottom: 32px;
+}
+footer .brands i {
+  height: 39px;
+  width: 39px;
+  border-radius: 50%;
+  border: 1px solid #1f3d50;
+  color: var(--primary-color);
+  line-height: 39px;
+  text-align: center;
+  margin: 0 5px;
+  transition: 0.4s;
+}
+footer .brands i:hover {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+footer .contact a,
+footer .contact address,
+footer .contact .icon {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 14px;
+  color: #777777;
+}
+footer .contact address {
+  margin-bottom: 0;
+}
+footer .contact .details {
+  margin: 15px 0;
+  padding: 0 20px;
+}
+
+footer .contact .icon {
+  font-size: 20px;
+}
+footer .links ul li a {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 14px;
+  color: #444444;
+  line-height: 44px;
+  transition: 0.4s;
+  text-transform: capitalize;
+}
+footer .links ul li a:hover {
+  color: var(--primary-color);
+  padding-left: 20px;
+}
+#important_info {
+  background: #f5f5f5;
+  padding: 105px 0 60px;
+  box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.15);
+}
+#bottom_footer strong {
+  font-family: var(--secondary-font);
+  color: #777777;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  text-transform: capitalize;
+}
+#bottom_footer strong span {
+  color: var(--secondary-color);
+  text-transform: uppercase;
+}
+#bottom_footer {
+  background: #ffffff;
+  padding: 20px 0;
+}
+
+/* ==========Footer Css Ends========== */
